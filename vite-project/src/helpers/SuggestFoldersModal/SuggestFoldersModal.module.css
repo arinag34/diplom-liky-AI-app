@@ -1,0 +1,127 @@
+.overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(180, 220, 200, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 6px 20px rgba(144, 196, 171, 0.4);
+    animation: fadeIn 0.25s ease-in-out;
+    text-align: center;
+    position: relative;
+    z-index: 10000;
+}
+
+.modal h2 {
+    margin-bottom: 1.5rem;
+    color: #68a691;
+    font-size: 1.6rem;
+}
+
+.suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.suggestionButton {
+    background-color: #a8e6cf;
+    color: #2d5c4a;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0 2px 6px rgba(168, 230, 207, 0.3);
+}
+
+.suggestionButton:hover {
+    background-color: #98ddc3;
+}
+
+.chooseMyself {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.chooseMyself span {
+    font-weight: 500;
+    color: #4c7c6e;
+}
+
+.chooseMyself select {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f8fff8;
+    color: #2d5c4a;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.chooseMyself select:focus {
+    border-color: #a8e6cf;
+}
+
+.chooseMyself button {
+    background-color: #a8e6cf;
+    color: #2d5c4a;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0 2px 6px rgba(168, 230, 207, 0.3);
+}
+
+.chooseMyself button:hover {
+    background-color: #98ddc3;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #f9d5d3;
+    color: #7a3b3b;
+    border: none;
+    padding: 0.2rem 0.7rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0 2px 6px rgba(249, 213, 211, 0.4);
+    line-height: 1;
+}
+
+.closeButton:hover {
+    background-color: #f3bfbf;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

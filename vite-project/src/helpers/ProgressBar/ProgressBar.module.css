@@ -1,0 +1,38 @@
+.wrapper {
+    width: 40%;
+    height: 10px;
+    background-color: #d4e5da;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin: 1rem auto;
+    box-shadow: 0 0 6px rgba(144, 196, 171, 0.6);
+}
+
+.progress {
+    width: 30%;
+    height: 100%;
+    border-radius: 6px;
+    background: linear-gradient(
+            270deg,
+            #a8e6cf,
+            #dcedc1,
+            #fff7ae,
+            #b3e5fc,
+            #a8e6cf
+    );
+    background-size: 400% 400%;
+    animation: gradientShift 1.5s ease-in-out infinite, moveBar 1.8s linear infinite;
+    box-shadow: 0 0 10px #dcedc180, 0 0 4px #a8e6cfaa;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes moveBar {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(400%); }
+}
